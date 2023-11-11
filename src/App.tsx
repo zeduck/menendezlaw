@@ -12,7 +12,8 @@ const firebaseConfig: { [id: string]: string | undefined } = {
 };
 
 export default function App() {
-  const app = initializeApp(firebaseConfig);
+  // const app = 
+  initializeApp(firebaseConfig);
   
   return (
     <>
