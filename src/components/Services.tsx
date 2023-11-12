@@ -17,7 +17,8 @@ export default function Services() {
 
   return (
       <div className="m-12 md:m-16">
-        <h1 className="text-5xl md:text-6xl pb-8 md:pb-12"> Services </h1>
+        <h1 className="text-5xl md:text-6xl pb-6 md:pb-8"> Services </h1>
+        <p className="text-xl md:text-2xl pb-8 md:pb-12">Injustice anywhere is a threat to justice everywhere. As a refugee lawyer, I help people fleeing from persecution to find peace and security in Canada.</p>
         <div className="flex flex-col justify-between gap-4 md:gap-6">
           {
             cards.map(({ title}) => {

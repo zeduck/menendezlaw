@@ -29,34 +29,34 @@ export default function App() {
   const aboutus = useRef(null!);
   const contact = useRef(null!);
 
-  const messageFade = {
-    from: { opacity: 0, y: -250, },
-    to: { opacity: 1, y: 0, },
-  }
+  // const messageFade = {
+  //   from: { opacity: 0, y: -250, },
+  //   to: { opacity: 1, y: 0, },
+  // }
 
-  const [servicesTrigger, serviceMessage] = useInView(() => (messageFade), { rootMargin: '-49% 0px', })
-  const [locationTrigger, locationMessage] = useInView(() => (messageFade), { rootMargin: '-49% 0px', })
-  const [aboutusTrigger, aboutusMessage] = useInView(() => (messageFade), { rootMargin: '-49% 0px', })
-  const [contactTrigger, contactMessage] = useInView(() => (messageFade), { rootMargin: '-49% 0px', })
+  // const [servicesTrigger, serviceMessage] = useInView(() => (messageFade), { rootMargin: '-49% 0px', })
+  // const [locationTrigger, locationMessage] = useInView(() => (messageFade), { rootMargin: '-49% 0px', })
+  // const [aboutusTrigger, aboutusMessage] = useInView(() => (messageFade), { rootMargin: '-49% 0px', })
+  // const [contactTrigger, contactMessage] = useInView(() => (messageFade), { rootMargin: '-49% 0px', })
 
-  const messages: { 
-    style: {
-      opacity: SpringValue<number>;
-      y: SpringValue<number>;
-    }, 
-    message: string 
-  }[] = [
-    {style: serviceMessage, message: "Injustice anywhere is a threat to justice everywhere. As a refugee lawyer, I help people fleeing from persecution to find peace and security in Canada."},
-    {style: aboutusMessage, message: "If you are looking for a tireless and compassionate advocate for your refugee claim, reach out to me! I can speak Spanish and English. "},
-    {style: locationMessage, message: "My immigration firm offers help completing refugee claims and visitor visa extensions. Located right in the nation's capital, we can work virtually or in person."},
-    {style: contactMessage, message: "I look forward to hearing from you!"},
-  ];
+  // const messages: { 
+  //   style: {
+  //     opacity: SpringValue<number>;
+  //     y: SpringValue<number>;
+  //   }, 
+  //   message: string 
+  // }[] = [
+  //   {style: serviceMessage, message: "Injustice anywhere is a threat to justice everywhere. As a refugee lawyer, I help people fleeing from persecution to find peace and security in Canada."},
+  //   {style: aboutusMessage, message: "If you are looking for a tireless and compassionate advocate for your refugee claim, reach out to me! I can speak Spanish and English. "},
+  //   {style: locationMessage, message: "My immigration firm offers help completing refugee claims and visitor visa extensions. Located right in the nation's capital, we can work virtually or in person."},
+  //   {style: contactMessage, message: "I look forward to hearing from you!"},
+  // ];
   
   return (
     <div className='font-sans text-primary_content'>
 
       {/* POP UP MESSAGES */}
-      { 
+      {/* { 
         messages.map(({ style, message }) => {
           return (
             <animated.div className="fixed z-50 left-1/2 top-4 md:top-6" style={style}> 
@@ -66,7 +66,7 @@ export default function App() {
             </animated.div>
           );
         }) 
-      }
+      } */}
       
       {/* CONTENT */}
       <Hero/>
@@ -74,28 +74,28 @@ export default function App() {
       <div className='text-center'>
         <Section ref={services}> 
           <Services/> 
-          <div ref={servicesTrigger} className='absolute h-3/4 left-1/2 top-1/2 -translate-y-1/2 z-10'/>
+          {/* <div ref={servicesTrigger} className='absolute h-3/4 left-1/2 top-1/2 -translate-y-1/2 z-10'/> */}
         </Section>
       </div>
 
       <div className='text-center'>
         <Section ref={aboutus}> 
           <Aboutus/> 
-          <div ref={aboutusTrigger} className='absolute h-3/4 left-1/2 top-1/2 -translate-y-1/2 z-10'/>
+          {/* <div ref={aboutusTrigger} className='absolute h-3/4 left-1/2 top-1/2 -translate-y-1/2 z-10'/> */}
         </Section>
       </div>
 
       <div className='text-center'>
         <Section ref={location}> 
           <Location/>
-          <div ref={locationTrigger} className='absolute h-3/4 left-1/2 top-1/2 -translate-y-1/2 z-10'/>
+          {/* <div ref={locationTrigger} className='absolute h-3/4 left-1/2 top-1/2 -translate-y-1/2 z-10'/> */}
         </Section>
       </div>
 
       <div className='text-center'>
         <Section ref={contact}> 
           <Contact/> 
-          <div ref={contactTrigger} className='absolute h-3/4 left-1/2 top-1/2 -translate-y-1/2 z-10'/>
+          {/* <div ref={contactTrigger} className='absolute h-3/4 left-1/2 top-1/2 -translate-y-1/2 z-10'/> */}
         </Section>
       </div>
 

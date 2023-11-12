@@ -5,7 +5,11 @@ export default function Location() {
 
   return (
     <div className="m-12 md:m-16">
-      <h1 className="text-5xl md:text-6xl pb-8 md:pb-12 w-full"> Location </h1>
+      
+      <h1 className="text-5xl md:text-6xl pb-6 md:pb-8"> Location </h1>
+        <p className="text-xl md:text-2xl pb-8 md:pb-12">My immigration firm offers help completing refugee claims and visitor visa extensions. Located right in the nation's capital, we can work virtually or in person.</p>
+        
+
       <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-6 items-stretch">
         {/* TEXT */}
         <div className="flex-[2] flex flex-col justify-between items-stretch gap-4 md:gap-6">
