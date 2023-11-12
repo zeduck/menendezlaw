@@ -15,8 +15,8 @@ export default function Section({
   )
 
   return (
-    <animated.div ref={faderef} style={fadein}>
-      <div ref={ref} className="m-3 md:m-6 mb-12 md:mb-24 border-2 border-transparent bg-base_100 relative rounded-[3rem] max-w-[100rem] inline-block text-left">
+    <animated.div ref={faderef} style={fadein} className="w-full">
+      <div ref={ref} className="m-3 md:m-6 mb-8 md:mb-16 bg-base_100 text-base_content relative rounded-[3rem] w-[90vw] xl:max-w-[90rem] inline-block text-left">
         { children }
       </div>
     </animated.div>

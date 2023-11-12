@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* width */
-::-webkit-scrollbar {
-  width: 0px;
-}
-
 @media (pointer:fine) {
   /* width */
   ::-webkit-scrollbar {
@@ -20,12 +15,12 @@
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #212121;
+    background: #43546d;
     border-radius: 10px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #23282f;
+    background: #354453;
   }
 }
