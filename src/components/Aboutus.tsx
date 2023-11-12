@@ -12,9 +12,7 @@ export default function Aboutus() {
           
           <div className="rounded-3xl bg-primary text-primary_content p-6 md:p-8">
             <p className="text-xl md:text-2xl">
-              My own family immigrated to Canada from Colombia. 
-              <br/><br/> 
-              Being a newcomer here instilled in me a passion for others who brave everything to find happiness in a strange land. 
+              My own family immigrated to Canada from Colombia. Being a newcomer here instilled in me a passion for others who brave everything to find happiness in a strange land. 
             </p>
           </div>
 

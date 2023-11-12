@@ -10,7 +10,7 @@ export default function Location() {
         <p className="text-xl md:text-2xl pb-8 md:pb-12">My immigration firm offers help completing refugee claims and visitor visa extensions. Located right in the nation's capital, we can work virtually or in person.</p>
         
 
-      <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-6 items-stretch">
+      <div className="flex flex-col lg:flex-row justify-between gap-4 md:gap-6 items-stretch">
         {/* TEXT */}
         <div className="flex-[2] flex flex-col justify-between items-stretch gap-4 md:gap-6">
 
@@ -34,7 +34,7 @@ export default function Location() {
           {/* ABOUTS */}
           <div className="flex-1 rounded-3xl p-6 md:p-8 bg-primary text-primary_content flex flex-col justify-evenly gap-3 md:gap-6">
             { abouts.map((about) => 
-              <div key={about} className="flex flex-row justify-start gap-3 md:gap-6">
+              <div key={about} className="flex flex-row justify-start gap-4 md:gap-6">
                 <MdCheck className='w-[24px] h-[24px]'/>
                 <p className='text-lg md:text-xl'>{about}</p>
               </div>
