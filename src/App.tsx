@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import Hero from './components/Hero';
 import Services from './components/Services';
 import Section from './components/Section';
-import { useInView, animated, SpringValue } from '@react-spring/web';
+// import { useInView, animated, SpringValue } from '@react-spring/web';
 import { useRef } from 'react';
 import Aboutus from './components/Aboutus';
 import Contact from './components/Contact';

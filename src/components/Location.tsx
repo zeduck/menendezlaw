@@ -34,7 +34,7 @@ export default function Location() {
           {/* ABOUTS */}
           <div className="flex-1 rounded-3xl p-6 md:p-8 bg-primary text-primary_content flex flex-col justify-evenly gap-3 md:gap-6">
             { abouts.map((about) => 
-              <div key={about} className="flex flex-row justify-start gap-4 md:gap-6">
+              <div key={about} className="flex flex-row justify-start gap-4 md:gap-6 overflow-visible">
                 <MdCheck className='w-[24px] h-[24px]'/>
                 <p className='text-lg md:text-xl'>{about}</p>
               </div>
