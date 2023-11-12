@@ -8,7 +8,7 @@ export default function Aboutus() {
       <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-6 items-stretch">
         
         {/* TEXT */}
-        <div className="flex-1">
+        <div className="flex-[2]">
           <div className="rounded-3xl bg-primary text-primary_content p-6 md:p-8">
             <p className="text-xl md:text-2xl">
               My own family immigrated to Canada from Colombia. 
@@ -19,7 +19,7 @@ export default function Aboutus() {
         </div>
 
         {/* IMAGES */}
-        <div className="flex-1 lg:flex-[2] overflow-hidden">
+        <div className="flex-[2] xl:flex-[3] overflow-hidden transition-all">
           <div className="flex flex-row overflow-y-hidden overflow-x-auto snap-x snap-mandatory gap-3 md:gap-4 ">
             { images.map((src) => <img src={src} alt="Image of office" className="snap-center rounded-3xl"/>) }
           </div>

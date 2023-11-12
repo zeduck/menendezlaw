@@ -59,7 +59,7 @@ export default function App() {
       { 
         messages.map(({ style, message }) => {
           return (
-            <animated.div className="fixed z-50 left-1/2 top-6 md:top-8" style={style}> 
+            <animated.div className="fixed z-50 left-1/2 top-4 md:top-6" style={style}> 
               <div className='-translate-x-1/2 bg-secondary text-secondary_content rounded-[3rem] relative py-6 px-8 w-max max-w-[90vw] lg:max-w-5xl'>
                 <p className='relative text-xl md:text-2xl text-center'> { message } </p> 
               </div>
