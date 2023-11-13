@@ -5,7 +5,7 @@ export default function Hero() {
       <div className="bg-[url('/office1.jpg')] absolute w-full h-full brightness-50 bg-center bg-cover blur-sm"/>
       
       <div className="my-36 md:my-48 xl:my-64 text-center relative z-10">
-        <h1 className="text-6xl md:text-8xl pb-8 md:pb-12 font-medium">Mendendez Law</h1>
+        <h1 className="text-6xl md:text-8xl pb-8 md:pb-12 font-medium">Menendez Law</h1>
         <p className="text-2xl md:text-4xl ">Refugee and Immigration</p>
       </div>
     
