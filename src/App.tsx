@@ -18,7 +18,7 @@ export default function App() {
   return (
     <div className=' font-sans'>
 
-      <h1 className="max-h-screen max-w-screen text-center text-7xl mt-10">Mendendez Law</h1>
+      <h1 className="max-h-screen max-w-screen text-center text-7xl mt-10">Menendez Law</h1>
     </div>
   );
 }
