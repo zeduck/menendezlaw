@@ -8,9 +8,9 @@ export default function Footer() {
           <p className="pb-1 md:pb-2">
             17 York St Suite 405, Ottawa, ON K1N 5S7
           </p>
-          <p className="pb-1 md:pb-2">
+          {/* <p className="pb-1 md:pb-2">
             example@email.com
-          </p>
+          </p> */}
           <p className="pb-1 md:pb-2">
             +1 613 860 8998
           </p>

@@ -7,9 +7,9 @@ export default function Contact() {
         
 
       <div className="bg-primary text-primary_content rounded-3xl w-full p-6 md:p-12 flex flex-col justify-start gap-5 text-xl md:text-2xl">
-        <div>
+        {/* <div>
           <a href="mailto:example@email.com" className="underline hover:text-secondary_focus">example@email.com</a>
-        </div>
+        </div> */}
         <div>
           <a href="tel:+16138608998" className="underline hover:text-secondary_focus">+1 613 860 8998</a>
         </div>
