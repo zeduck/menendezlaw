@@ -1,3 +1,6 @@
+import { FaLinkedin } from "react-icons/fa";
+import { MdEmail, MdPhone } from "react-icons/md";
+
 export default function Contact() {
   return (
     <div className="m-12 md:m-16">
@@ -7,12 +10,22 @@ export default function Contact() {
         
 
       <div className="bg-primary text-primary_content rounded-3xl w-full p-6 md:p-12 flex flex-col justify-start gap-5 text-xl md:text-2xl">
-        {/* <div>
-          <a href="mailto:example@email.com" className="underline hover:text-secondary_focus">example@email.com</a>
-        </div> */}
-        <div>
-          <a href="tel:+16138608998" className="underline hover:text-secondary_focus">+1 613 860 8998</a>
+        
+        <div className="flex flex-row justify-start gap-2 sm:gap-4 items-center">
+          <MdEmail className="w-5 md:w-7 h-5 md:h-7" />
+          <a href="mailto:davidmenendezlaw@gmail.com" className="hover:underline hover:text-secondary_focus">davidmenendezlaw@gmail.com</a>
         </div>
+
+        <div className="flex flex-row justify-start gap-2 sm:gap-4 items-center">
+          <MdPhone className="w-5 md:w-7 h-5 md:h-7" />
+          <a href="tel:+16138608998" className="hover:underline hover:text-secondary_focus">+1 613 860 8998</a>
+        </div>
+        
+        <div className="flex flex-row justify-start gap-2 sm:gap-4 items-center">
+          <FaLinkedin className="w-5 md:w-7 h-5 md:h-7" />
+          <a href="https://www.linkedin.com/in/david-ricardo-menéndez-ortiz-a2183091" className="hover:underline hover:text-secondary_focus"> LinkedIn </a>
+        </div>
+
       </div>
     </div>
   );
