@@ -18,7 +18,7 @@ export default function Contact() {
 
         <div className="flex flex-row justify-start gap-2 sm:gap-4 items-center">
           <MdPhone className="w-5 md:w-7 h-5 md:h-7" />
-          <a href="tel:+16138608998" className="hover:underline hover:text-secondary_focus">+1 613 860 8998</a>
+          <a href="tel:+16138608998" className="hover:underline hover:text-secondary_focus">613 860 8998</a>
         </div>
         
         <div className="flex flex-row justify-start gap-2 sm:gap-4 items-center">
