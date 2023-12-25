@@ -31,7 +31,7 @@ export default function Aboutus() {
         </div>
 
         {/* IMAGES */}
-        <div className="flex-[1] overflow-hidden transition-all">
+        <div className="flex-[2] xl:flex-[1] overflow-hidden transition-all">
           <div className="flex flex-row overflow-y-hidden overflow-x-auto snap-x snap-mandatory gap-3 md:gap-4 ">
             {/* { images.map((src) => <img src={src} alt="Image of office" className="snap-center rounded-3xl"/>) } */}
             <img src={"/portrait.jpg"} alt="self portrait" className="snap-center rounded-3xl"></img>
