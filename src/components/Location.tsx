@@ -1,7 +1,7 @@
 import { MdCheck } from 'react-icons/md';
 
 export default function Location() {
-  const abouts = ['Language assistance', 'Wheelchair-accessible parking lot', 'Washroom'];
+  const abouts = ['Language assistance', 'Elevator accessible', 'Washroom'];
 
   return (
     <div className="m-12 md:m-16">
@@ -25,7 +25,7 @@ export default function Location() {
             </div>
             <hr></hr>
             <div className="flex flex-row justify-between text-lg md:text-xl py-6">
-              <p>Sunday - Saturday</p>
+              <p>Saturday - Sunday</p>
               <p>Closed</p>
             </div>
             <hr className='pb-2'></hr>

@@ -9,6 +9,7 @@ import Aboutus from './components/Aboutus';
 import Contact from './components/Contact';
 import Location from './components/Location';
 import Footer from './components/Footer';
+import Pictures from './components/Pictures';
 
 const firebaseConfig: { [id: string]: string | undefined } = {
   apiKey: import.meta.env.VITE_API_KEY,
@@ -27,6 +28,7 @@ export default function App() {
   const services = useRef(null!);
   const location = useRef(null!);
   const aboutus = useRef(null!);
+  const pictures = useRef(null!);
   const contact = useRef(null!);
 
   // const messageFade = {
@@ -91,6 +93,14 @@ export default function App() {
           {/* <div ref={locationTrigger} className='absolute h-3/4 left-1/2 top-1/2 -translate-y-1/2 z-10'/> */}
         </Section>
       </div>
+
+      <div className='text-center'>
+        <Section ref={pictures}> 
+          <Pictures/> 
+          {/* <div ref={contactTrigger} className='absolute h-3/4 left-1/2 top-1/2 -translate-y-1/2 z-10'/> */}
+        </Section>
+      </div>
+
 
       <div className='text-center'>
         <Section ref={contact}> 
