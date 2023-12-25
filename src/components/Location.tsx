@@ -1,12 +1,16 @@
 import { MdCheck } from 'react-icons/md';
 
 export default function Location() {
-  const abouts = ['Language assistance', 'Wheelchair-accessible parking lot', 'Washroom'];
+  const abouts = ['Language assistance', 'Elevator accessible', 'Washroom'];
 
   return (
     <div className="m-12 md:m-16">
-      <h1 className="text-5xl md:text-6xl pb-8 md:pb-12 w-full"> Location </h1>
-      <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-6 items-stretch">
+      
+      <h1 className="text-5xl md:text-6xl pb-6 md:pb-8"> Location </h1>
+        <p className="text-xl md:text-2xl pb-8 md:pb-12">My immigration firm offers help completing refugee claims and visitor visa extensions. Located right in the nation's capital, we can work virtually or in person.</p>
+        
+
+      <div className="flex flex-col lg:flex-row justify-between gap-4 md:gap-6 items-stretch">
         {/* TEXT */}
         <div className="flex-[2] flex flex-col justify-between items-stretch gap-4 md:gap-6">
 
@@ -21,7 +25,7 @@ export default function Location() {
             </div>
             <hr></hr>
             <div className="flex flex-row justify-between text-lg md:text-xl py-6">
-              <p>Sunday - Saturday</p>
+              <p>Saturday - Sunday</p>
               <p>Closed</p>
             </div>
             <hr className='pb-2'></hr>
@@ -30,7 +34,7 @@ export default function Location() {
           {/* ABOUTS */}
           <div className="flex-1 rounded-3xl p-6 md:p-8 bg-primary text-primary_content flex flex-col justify-evenly gap-3 md:gap-6">
             { abouts.map((about) => 
-              <div key={about} className="flex flex-row justify-start gap-3 md:gap-6">
+              <div key={about} className="flex flex-row justify-start gap-4 md:gap-6 overflow-visible">
                 <MdCheck className='w-[24px] h-[24px]'/>
                 <p className='text-lg md:text-xl'>{about}</p>
               </div>
