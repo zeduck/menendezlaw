@@ -5,7 +5,7 @@ export default function Aboutus() {
   return(
     <div className="m-12 md:m-16">
       <h1 className="text-5xl md:text-6xl pb-8 md:pb-12"> About me </h1>
-      <div className="flex flex-col sm:flex-row justify-between gap-4 md:gap-6 items-stretch">
+      <div className="flex flex-col lg:flex-row justify-between gap-4 md:gap-6 items-stretch">
         
         {/* TEXT */}
         <div className="flex-[2] flex flex-col gap-3 md:gap-4 items-stretch h-full">
