@@ -14,7 +14,7 @@ export default function Contact() {
         <div className="flex flex-row justify-start gap-2 sm:gap-4 items-center">
           <MdEmail className="w-5 md:w-7 h-5 md:h-7" />
           <a href="mailto:davidmenendezlaw@gmail.com" className="hover:underline hover:text-secondary_focus hidden sm:grid">davidmenendezlaw@gmail.com</a>
-          <a href="mailto:davidmenendezlaw@gmail.com" className="hover:underline hover:text-secondary_focus grid sm:hidden">Email</a>
+          <a href="mailto:davidmenendezlaw@gmail.com" className="hover:underline hover:text-secondary_focus grid sm:hidden">davidmenendezlaw @gmail.com</a>
         </div>
 
         <div className="flex flex-row justify-start gap-2 sm:gap-4 items-center">
