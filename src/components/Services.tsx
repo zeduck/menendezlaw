@@ -13,7 +13,7 @@ export default function Services() {
       body: 'I can help you prepare an application to prolong your visitor status here in Canada.'
     }, {
       title: 'Humanitarian & compassionate ground applications',
-      body: 'For humanitarian applications - I regularly prepare applications for permanent residence on humanitarian grounds (“H&C Applications”). These are paper-based applications made to Immigration, Refugees and Citizenship Canada (IRCC).'
+      body: 'For humanitarian applications, I regularly prepare applications for permanent residence on humanitarian grounds (“H&C Applications”). These are paper-based applications made to Immigration, Refugees and Citizenship Canada (IRCC).'
     }, {
       title: 'Permanent residency applications',
       body: ''
