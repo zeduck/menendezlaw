@@ -10,8 +10,8 @@ export default function Pictures() {
 				{/* <p className="text-xl md:text-2xl pb-8 md:pb-12">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At odit temporibus adipisci totam voluptatem impedit voluptatum quibusdam corrupti soluta, non suscipit saepe ipsum consectetur quos, dolore hic aperiam odio ad?</p> */}
         
 
-      <div className="flex flex-row h-72 md:h-96 lg:h-[32rem] justify-start gap-4 md:gap-6 items-start overflow-scroll overflow-y-auto">
-				{ images.map((src) => <img src={src} alt="Image of office" className="snap-center rounded-3xl h-full"/>) }
+      <div className="flex flex-row h-48 sm:h-72 md:h-96 lg:h-[32rem] justify-start gap-4 md:gap-6 items-start overflow-scroll overflow-y-auto">
+				{ images.map((src) => <img src={src} alt="Office" key={src} className="snap-center rounded-3xl h-full"/>) }
 
       </div>
       
