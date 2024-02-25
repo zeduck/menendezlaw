@@ -31,6 +31,7 @@ export default function App() {
   const pictures = useRef(null!);
   const contact = useRef(null!);
 
+  // --------------------------------- ALL COMMENTS ARE FOR THE POP UP MESSAGES ---------------------------------
   // const messageFade = {
   //   from: { opacity: 0, y: -250, },
   //   to: { opacity: 1, y: 0, },
