@@ -19,11 +19,7 @@ export default function Services() {
       body: ''
     }
   ];
-
-  const [ visible1, setVisible1 ] = useState(false);
-  const [ visible2, setVisible2 ] = useState(false);
-  const [ visible3, setVisible3 ] = useState(false);
-  const [ visible4, setVisible4 ] = useState(false);
+  const visible = [useState(false), useState(false), useState(false)];
 
   return (
       <div className="m-12 md:m-16">
@@ -31,36 +27,19 @@ export default function Services() {
         <p className="text-xl md:text-2xl pb-8 md:pb-12"> Injustice anywhere is a threat to justice everywhere. As a refugee lawyer, I help people fleeing from persecution to find peace and security in Canada. I accept legal aid certificates and private clients.</p>
         <div className="flex flex-col justify-between gap-4 md:gap-6">
           
-          <button onClick={() => setVisible1(!visible1)} className={`bg-primary text-primary_content text-left rounded-3xl w-full p-4 md:p-8 hover:-translate-y-1 hover:bg-primary_focus hover:cursor-pointer break-words overflow-hidden transition-all`}>
-            <h1 className="text-2xl lg:text-3xl"> { cards[0].title } </h1>
-            <p className={`text-lg md:text-xl pt-4 md:pt-6 transition-all ${!visible1 && 'hidden'} ${visible1 && 'grid'}`}> { cards[0].body } </p>
-          </button>
-          
-          <button onClick={() => setVisible2(!visible2)} className={`bg-primary text-primary_content text-left rounded-3xl w-full p-4 md:p-8 hover:-translate-y-1 hover:bg-primary_focus hover:cursor-pointer break-words overflow-hidden transition-all`}>
-            <h1 className="text-2xl lg:text-3xl"> { cards[1].title } </h1>
-            <p className={`text-lg md:text-xl pt-4 md:pt-6 transition-all ${!visible2 && 'hidden'} ${visible2 && 'grid'}`}> { cards[1].body } </p>
-          </button>
-          
-          <button onClick={() => setVisible3(!visible3)} className={`bg-primary text-primary_content text-left rounded-3xl w-full p-4 md:p-8 hover:-translate-y-1 hover:bg-primary_focus hover:cursor-pointer break-words overflow-hidden transition-all`}>
-            <h1 className="text-2xl lg:text-3xl"> { cards[2].title } </h1>
-            <p className={`text-lg md:text-xl pt-4 md:pt-6 transition-all ${!visible3 && 'hidden'} ${visible3 && 'grid'}`}> { cards[2].body } </p>
-          </button>
+          {visible.map(([getVisible, setVisible], index) => {
+            return (
+              <button onClick={() => setVisible(!getVisible)} className={`bg-primary text-primary_content text-left rounded-3xl w-full p-4 md:p-8 hover:-translate-y-1 hover:bg-primary_focus hover:cursor-pointer break-words overflow-hidden transition-all`}>
+                <h1 className="text-2xl lg:text-3xl"> { cards[index].title } </h1>
+                <p className={`text-lg md:text-xl transition-all ${!getVisible && 'max-h-0 text-transparent'} ${getVisible && 'max-h-96 pt-4 md:pt-6'}`}> { cards[index].body } </p>
+              </button>
+            )
+          })}
 
-          <button onClick={() => setVisible4(!visible4)} className={`bg-primary text-primary_content text-left rounded-3xl w-full p-4 md:p-8 hover:-translate-y-1 break-words overflow-hidden transition-all`}>
+          <button className={`bg-primary text-primary_content text-left rounded-3xl w-full p-4 md:p-8 hover:-translate-y-1 break-words overflow-hidden transition-all`}>
             <h1 className="text-2xl lg:text-3xl"> { cards[3].title } </h1>
-            {/* <p className={`text-lg md:text-xl pt-4 md:pt-6 transition-all ${!visible4 && 'hidden'} ${visible4 && 'grid'}`}> { cards[3].body } </p> */}
-          </button>
-          
-          {/* {
-            cards.map(({ title, body}) => {
-              return (
-                <div onClick={toggleVisible} className={`bg-primary text-primary_content rounded-3xl w-full p-4 md:p-8 hover:-translate-y-1 hover:bg-primary_focus break-words overflow-hidden ${!visible && 'h-24'} ${visible && 'h-full'} transition-all`}>
-                  <h1 className="text-2xl lg:text-3xl"> { title } </h1>
-                  <p className="text-lg md:text-xl pt-4 md:pt-6"> { body } </p>
-                </div>
-              );
-            })
-          } */}
+          </button> 
+
         </div>
       </div>
 
