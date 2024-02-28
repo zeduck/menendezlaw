@@ -25,6 +25,7 @@ export default function App() {
   // const app = 
   initializeApp(firebaseConfig);
 
+  // useRefs for future navbar
   const services = useRef(null!);
   const location = useRef(null!);
   const aboutus = useRef(null!);
