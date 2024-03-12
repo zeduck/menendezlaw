@@ -16,7 +16,7 @@ export default function Location() {
 
           {/* HOURS */}
           <div className="flex-1 rounded-3xl p-6 md:p-8 bg-primary text-primary_content">
-            <h1 className="text-2xl md:text-3xl pb-6 md:pb-8"> Hours </h1>
+            <h1 className="text-xl md:text-2xl pb-6 md:pb-8"> Hours </h1>
 
             <hr></hr>
             <div className="flex flex-row justify-between text-lg md:text-xl py-6">
