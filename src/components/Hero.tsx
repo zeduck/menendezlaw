@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <>
       <animated.div style={fadein} className="fixed top-10 right-10 md:top-14 md:right-14 z-50">
-        <Link to={'spanish/'}>
+        <Link to={'es/'}>
           <div className="bg-primary hover:bg-primary_focus text-primary_content text-2xl md:text-3xl lg:text-4xl rounded-3xl p-6 md:p-8">
             Español
           </div>
