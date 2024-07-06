@@ -11,11 +11,11 @@ export default {
     extend: {
       colors: {
         primary: '#1c4f82',
-        primary_focus: '#163d64',
+        primary_focus: '#18416b',
         primary_content: '#d2d9e5',
-        secondary: '#a5bfcc',
-        secondary_focus: '#7a939e',
-        secondary_content: '#1c1f21',
+        secondary: '#18416b',
+        secondary_focus: '#a7adb8',
+        secondary_content: '#d2d9e5',
         accent: '#eb6b47',
         accent_focus: '#e75127',
         accent_content: '#2e1a14',

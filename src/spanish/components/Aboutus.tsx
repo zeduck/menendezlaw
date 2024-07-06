@@ -1,19 +1,19 @@
 export default function Aboutus() {
 
   const texts = [
-    'My own family immigrated to Canada from Colombia. Being a newcomer here instilled in me a passion for others who brave everything to find happiness in a strange land.',
-    'I graduated from the University of Ottawa law school. I am very familiar with Ottawa now. I have helped guide hundreds of claimants from around the world in completing their claims.',
-    'If you are looking for a tireless and compassionate advocate for your refugee claim, reach out to me! I can speak Spanish and English.',
+    'Mi propia familia inmigró a Canadá desde Colombia. Ser un recién llegado aquí me inculcó una pasión por ayudar a otros que lo arriesgan todo para encontrar la felicidad en una tierra extraña.',
+    'Soy graduado de la facultad de derecho de la Universidad de Ottawa. Ahora estoy muy familiarizado con Ottawa. He ayudado a guiar a cientos de solicitantes de todo el mundo a completar sus solicitudes.',
+    'Si buscas un defensor incansable y compasivo para tu reclamo de refugiado, ¡contáctame! Puedo hablar español e inglés.',
   ];
 
   return(
     <div className="m-12 md:m-16">
-      <h1 className="text-5xl md:text-6xl pb-8 md:pb-12"> About me </h1>
+      <h1 className="text-5xl md:text-6xl pb-8 md:pb-12"> Sobre mí </h1>
       {/* FOR SMALL SCREENS (flex col) AND LARGE SCREENS (flex row) */}
       <div className="md:hidden flex lg:flex flex-col lg:flex-row justify-between gap-4 md:gap-6 items-stretch">
         
         {/* TEXT */}
-        <div className="flex-[2] flex flex-col gap-3 md:gap-4 items-stretch h-full">
+        <div className="flex-[2] flex flex-col gap-3 md:gap-4 items-stretch h-full">     
           {texts.map((text) => (
             <div className="rounded-3xl bg-secondary text-secondary_content p-6 md:p-8">
               <p className="text-xl md:text-2xl">
