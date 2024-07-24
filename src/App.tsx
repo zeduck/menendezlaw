@@ -23,41 +23,30 @@ export default function App() {
   // const app = initializeApp(firebaseConfig);
   
   return (
-    <div className='font-sans text-primary_content'>
+    <div className='font-sans text-primary_content text-center'>
       
       {/* CONTENT */}
       <Hero/>
+      
+      <Section> 
+        <Services/> 
+      </Section>
 
-      <div className='text-center'>
-        <Section> 
-          <Services/> 
-        </Section>
-      </div>
-
-      <div className='text-center'>
-        <Section> 
-          <Aboutus/> 
-        </Section>
-      </div>
-
-      <div className='text-center'>
-        <Section> 
-          <Location/>
-        </Section>
-      </div>
-
-      <div className='text-center'>
-        <Section> 
-          <Pictures/> 
-        </Section>
-      </div>
-
-
-      <div className='text-center'>
-        <Section> 
-          <Contact/> 
-        </Section>
-      </div>
+      <Section> 
+        <Aboutus/> 
+      </Section>
+    
+      <Section> 
+        <Location/>
+      </Section>
+    
+      <Section> 
+        <Pictures/> 
+      </Section>
+    
+      <Section> 
+        <Contact/> 
+      </Section>
 
       <Footer/>
 
