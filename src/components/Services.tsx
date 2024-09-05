@@ -29,16 +29,16 @@ export default function Services() {
           
           {visible.map(([getVisible, setVisible], index) => {
             return (
-              <button onClick={() => setVisible(!getVisible)} className={`bg-primary text-primary_content text-left rounded-3xl w-full p-6 md:p-8 hover:-translate-y-1 hover:bg-primary_focus hover:cursor-pointer break-words overflow-hidden transition-all`}>
+              <button onClick={() => setVisible(!getVisible)} className={`${getVisible? 'bg-primary_focus' : 'bg-primary'} text-primary_content text-left rounded-3xl w-full p-6 md:p-8 hover:-translate-y-1 hover:bg-primary_focus hover:cursor-pointer break-words overflow-hidden transition-all`}>
                 <h1 className="text-2xl md:text-3xl"> { cards[index].title } </h1>
                 <p className={`text-lg md:text-xl transition-all ${!getVisible && 'max-h-0 text-transparent'} ${getVisible && 'max-h-96 pt-4 md:pt-6'}`}> { cards[index].body } </p>
               </button>
             )
           })}
 
-          <button className={`bg-primary text-primary_content text-left rounded-3xl w-full p-4 md:p-8 hover:-translate-y-1 break-words overflow-hidden transition-all`}>
+          <div className={`bg-primary text-primary_content text-left rounded-3xl w-full p-4 md:p-8 break-words overflow-hidden transition-all`}>
             <h1 className="text-2xl md:text-3xl"> { cards[3].title } </h1>
-          </button> 
+          </div> 
 
         </div>
       </div>
