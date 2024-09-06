@@ -21,7 +21,7 @@ export default function Hero() {
       <div ref={faderef} className="m-3 md:m-6 mb-12 md:mb-24 border-2 border-transparent relative overflow-hidden rounded-[3rem]">
         
         <div 
-          className="absolute w-full h-full brightness-[.6] bg-center bg-cover saturate-50 blur-[1px]"
+          className="absolute w-full h-full brightness-50 bg-center bg-cover saturate-50 blur-[1px]"
           style={{ backgroundImage: "url('/bricks.jpg')" }}
         />
         
